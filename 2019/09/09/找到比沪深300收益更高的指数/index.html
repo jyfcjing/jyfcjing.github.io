@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="指数基金,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="我们之前在讲到指数基金的时候，都是使用沪深300指数来举例，并且使用了沪深300过去的数据进行回测。 因为沪深300，代表的是沪深两市规模最大的300家公司，它覆盖了沪深市场大约六成的市值，而且，作为宽基指数，其行业门类覆盖比较全，不受特定行业的政策性影响，具有足够的代表性。 沪深300也作为整个A股市场的基准收益对比，所有基金经理，都以战胜沪深300作为目标，哪怕是普通投资者，我们一般也以自己的">
+<meta name="keywords" content="指数基金">
+<meta property="og:type" content="article">
+<meta property="og:title" content="那些长期跑赢沪深300的那些指数">
+<meta property="og:url" content="http://yoursite.com/2019/09/09/找到比沪深300收益更高的指数/index.html">
+<meta property="og:site_name" content="定投养老">
+<meta property="og:description" content="我们之前在讲到指数基金的时候，都是使用沪深300指数来举例，并且使用了沪深300过去的数据进行回测。 因为沪深300，代表的是沪深两市规模最大的300家公司，它覆盖了沪深市场大约六成的市值，而且，作为宽基指数，其行业门类覆盖比较全，不受特定行业的政策性影响，具有足够的代表性。 沪深300也作为整个A股市场的基准收益对比，所有基金经理，都以战胜沪深300作为目标，哪怕是普通投资者，我们一般也以自己的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/%E6%8C%87%E6%95%B0%E5%9F%BA%E9%87%91.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-29-14-49-00.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-30-00-14-15.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-30-14-39-31.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-30-11-00-18.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-30-14-46-19.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-31-06-23-34.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-01-08-16-52.jpg">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-01-22-38-18.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-02-18-12-26.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-02-22-47-35.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-02-22-46-49.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-02-22-48-19.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-02-22-49-59.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-03-00-32-10.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-03-10-16-44.png">
+<meta property="og:updated_time" content="2019-09-04T01:38:51.884Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="那些长期跑赢沪深300的那些指数">
+<meta name="twitter:description" content="我们之前在讲到指数基金的时候，都是使用沪深300指数来举例，并且使用了沪深300过去的数据进行回测。 因为沪深300，代表的是沪深两市规模最大的300家公司，它覆盖了沪深市场大约六成的市值，而且，作为宽基指数，其行业门类覆盖比较全，不受特定行业的政策性影响，具有足够的代表性。 沪深300也作为整个A股市场的基准收益对比，所有基金经理，都以战胜沪深300作为目标，哪怕是普通投资者，我们一般也以自己的">
+<meta name="twitter:image" content="http://yoursite.com/images/%E6%8C%87%E6%95%B0%E5%9F%BA%E9%87%91.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/09/09/找到比沪深300收益更高的指数/">
+
+
+
+
+
+  <title>那些长期跑赢沪深300的那些指数 | 定投养老</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">定投养老</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/找到比沪深300收益更高的指数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="景云">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="定投养老">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">那些长期跑赢沪深300的那些指数</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-09T00:00:00+08:00">
+                2019-09-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/指数基金/" itemprop="url" rel="index">
+                    <span itemprop="name">指数基金</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>我们之前在讲到指数基金的时候，都是使用沪深300指数来举例，并且使用了沪深300过去的数据进行回测。</p>
+<p>因为沪深300，代表的是沪深两市规模最大的300家公司，它覆盖了沪深市场大约六成的市值，而且，作为宽基指数，其行业门类覆盖比较全，不受特定行业的政策性影响，具有足够的代表性。</p>
+<p>沪深300也作为整个A股市场的基准收益对比，所有基金经理，都以战胜沪深300作为目标，哪怕是普通投资者，我们一般也以自己的投资组合收益能否战胜沪深300作为参考。</p>
+<p>指数的本质是什么呢？其实就是一个由不同股票组成的组合。但是组合的方法有多种多样。我们以常见的指数类型来做个介绍：<br><img src="/images/%E6%8C%87%E6%95%B0%E5%9F%BA%E9%87%91.png" alt><br><code>图1：指数的分类</code></p>
+<h2 id="宽基指数（规模指数）"><a href="#宽基指数（规模指数）" class="headerlink" title="宽基指数（规模指数）"></a>宽基指数（规模指数）</h2><p>指的是选取各行业具有相当代表性的公司，组成的指数。不过比较尴尬的是，所谓宽基指数并没有一个统一的定义和标准，甚至维基百科都找不到这个词条，在中证指数官网上，把这类指数称作规模指数。借鉴美国证券机构的标准，宽基指数需要达到几个条件：<br>    1、含10个或更多个股票；<br>    2、单个成份股权重不超过30％；<br>    3、权重最大5个股票累计权重不超过指数60％；<br>    4、成份股平均日交易额超过5000万美元；<br>    5、包含行业种类要多。</p>
+<p>在A股市场，我们所说的宽基指数，通常是指：上证50、沪深300、中证500、中小板指等。</p>
+<p>因为宽基指数纳入的行业样本比较全面，股票数量也比较多，所以他的稳定性整体要更好，受行业政策影响造成的波动会更小。例如，2018年医药行业的带量采购，以及2017年的房地产调控等等，都会对特定行业造成影响，但宽基指数就没有这方面的问题，除非是中国经济整体性的问题。</p>
+<p><img src="/images/2019-07-29-14-49-00.png" alt><br><code>图2：主要宽基指数与沪深300涨幅对比，雪球</code></p>
+<p>对比这几个宽基指数自成立以来的业绩表现，中证500（ 涨幅395.75%）&gt;中小板指（涨幅297.48%）&gt;沪深300（涨幅285.23%）&gt;上证50（涨幅192.91%）。当然，市场阶段性的风格不同，不同时期，不同指数的涨幅不完全一致。</p>
+<blockquote>
+<p><strong>在过去15年的时间里，中证500的年化收益为11.61%，跑赢沪深300  1.9%左右。</strong></p>
+</blockquote>
+<p>可能的原因是：<br>1）通过对比上证50、沪深300、中证500的行业权重，我们发现中证500在医药、信息技术、原材料、工业方面的权重较高，而且各行业分布相对均衡，而沪深300和上证50中的金融地产单一占比过高，且金融地产的收益相对较低。说明中证500的行业结构上更具有成长性优势。<br><img src="/images/2019-07-30-00-14-15.png" alt><br><code>图3：3大宽基指数的一级行业权重，中证指数</code></p>
+<p>2）公司的利润增长，一般来说，是通过提高市场份额，以及提升产品价格。中证500为剔除沪深300成份股之后的中盘股，这些公司平均市值150亿左右，在全社会而言，是属于商业模式相对比较成熟的公司，其中不乏一些细分行业龙头，不像沪深300那样都是上千亿市值的庞然大物，所以这些公司有进一步提高市场占有率，提升行业龙头地位的可能性，且一旦取得了行业龙头地位，又具有更大的价格话语权，从而提高产品价格。如果在发展过程中掉队，指数的成份股调仓换股机制，也可以及时地将它们剔除出去。这可能是中证500涨幅更高的主要原因。</p>
+<p>不过，需要注意的是，中证500的成份股调仓比例较高，估值弹性较大，在2007年、2009年、2015年其PE将近90倍，而当前（2019年7月）PE为23倍左右，仅为最高值的1/4左右。</p>
+<h2 id="行业指数"><a href="#行业指数" class="headerlink" title="行业指数"></a>行业指数</h2><p>有的行业天生更容易赚钱。</p>
+<p>小米董事长雷军在2018年说，小米硬件税后利润率不超过5%。很多用户感叹，这真是良心公司。诚然，对于消费者来说可能是，但对于小米的股东，哪怕是持有一手200股的散户来说，就不那么幸运了。</p>
+<p>当然，雷军的逻辑是说，咱们硬件少赚点，多卖点手机，然后靠软件和服务赚钱。但根据小米财报，硬件才是小米营收真正的大头，而软件，也就是讲讲故事，期望市场给予更高估值的题材罢了。</p>
+<p>在手机硬件厂商里，除了苹果一枝独秀，营业利润率能维持在20%以上，其他手机厂商都是微利。有数据显示，在2017年第一季度OPPO收入约54.1亿美元，营业利润2.54亿美元，营业利润率4.7%；华为营收67.4亿美元，营业利润为2.26亿美元，营业利润率3.35%。</p>
+<p>这就是一个竞争异常激烈的红海市场，企业能保持微利活下来就已经不容易了。像罗永浩的锤子、贾跃亭的乐视手机、功能机时代的王者金立，都已衰落。魅族、联想、中兴、酷派，均已式微。</p>
+<p>那么什么行业更容易赚钱呢？我们还是通过沪深300指数，和他的10个一级行业对比来看看。</p>
+<p><img src="/images/2019-07-30-14-39-31.png" alt><br><code>图4：沪深300及300一级行业涨幅，中证指数</code></p>
+<p>沪深300的10个一级行业指数，均以2004年12月31日为基日，以1000点为基点。截至2019年7月30日，（必需）消费、医药、金融、可选（消费）涨幅超过沪深300指数，而电信、工业、信息、公用、材料、能源的涨幅则低于沪深300，且收益差距非常之大。先放结论：</p>
+<blockquote>
+<p>300消费14年7个月以来的年化收益达到22.76%，跑赢沪深300 13.01%。<br>300医药年化收益率16.81%，跑赢沪深300 7.06%。<br>300金融年化收益率14.01%，跑赢沪深300  4.26%。<br>300可选消费年化收益率也达到了12.05%，跑赢沪深300 2.3%。</p>
+</blockquote>
+<p><img src="/images/2019-07-30-11-00-18.png" alt><br><code>图5：主要消费、医药卫生、金融地产、可选消费指数的成份股及其权重，中证指数</code></p>
+<p>我们再来看看这些行业指数的成份股及其权重，这样可以更好地理解这些细分行业。</p>
+<p>在消费领域，被分为可主要消费和可选消费。主要消费是指日常消费品及其衍生行业，简单理解就是入口食用的，比如白酒、牛奶、猪肉，以及猪饲料如新希望，以及消费品流通零售企业如永辉超市。而可选消费，主要是家用电器、汽车及其衍生行业，如空调、汽车，以及家电零售企业如苏宁易购，广告传播平台如分众传媒。</p>
+<p>主要消费的权重股更为集中，前10大权重股合计占比92.17%，尤其前两大权重股贵州茅台、五粮液，两者合计占比46.96%，得益于近年白酒行业的景气，主要消费指数涨幅可观。</p>
+<p>可选消费10大权重股合计占比77.52%，前两大权重股为家电双雄格力和美的，合计占比41.73%，格力和美的整体市场表现也不错，但是自2017年房地产调控，家电行业增速有所放缓，而汽车行业近几年销量见顶之后有回落迹象，也对指数稍有拖累。</p>
+<p>医药卫生指数前10大权重股合计占比63.96%，除第一大权重股恒瑞医药占比26.28%外，其他成份股的占比权重都不太高。在10个一级行业中，医药卫生排第二，过去的涨幅略逊消费。</p>
+<p>80后人口基数大，正是青壮年，他们消费能力很强，但再过二三十年，同样的这群人将步入中老年，那么对医药消费的潜在需求就很大。另一方面是中国的制药企业，当前正以仿制药等为主打产品，跟世界一流药企相比差距还很大，但整个医药行业在研发投入方面舍得投入，人才层次也在逐渐提升，例如肿瘤的新型精准靶向疗法CAR-T、生物制药等领域，中国药企正在与世界一流药企同步。</p>
+<p>金融地产指数的前10大权重股合计占比54.52%，总的成份股数量上最多，达到73个。第一大权重股中国平安占比19.84%，其他成份股权重也不太高，跟医药卫生指数类似。</p>
+<p>金融地产指数涵盖银行、证券、保险、房地产等等，这些行业都具有一定的周期属性，公司体积都很庞大，稳定性更强，但盈利能力相对消费、医药要稍差一些。房地产过去相对是高成长性的行业，但近几年表现优秀的地产公司，如恒大、碧桂园、融创等都是在港股上市。</p>
+<p>除了这四个行业指数，电信、工业、信息、公用、材料、能源的涨幅要落后于沪深300，尤其排在最后的300能源，14年多涨幅仅有54.8%，年化涨幅3.06%，加上股息勉强比存银行强一点，近5年的收益更是负数，5年年化收益-2.29%。</p>
+<p><img src="/images/2019-07-30-14-46-19.png" alt><br><code>图6：沪深300与300消费、300医药、300金融、300可选涨幅对比，雪球</code></p>
+<p>所以，持有那些质地更好的优秀行业指数，长期收益也会跑赢沪深300。</p>
+<h2 id="主题指数"><a href="#主题指数" class="headerlink" title="主题指数"></a>主题指数</h2><p>主题指数数量很多，他可以根据市场动态和经济热点不断地增加新的主题，比如养老产业、长三角、云计算与大数据、新能源汽车等等。</p>
+<p>需要注意的是，指数公司可以编制指数，但不一定有相对应的跟踪它的基金产品。比如云计算与大数据目前就没有基金跟踪。指数是为了反映市场的情况，而基金却是实打实的生意，如果成立了一支基金，但基金收益却不理想，那也没有人参与申购。</p>
+<p>在主题指数部分，我重点介绍中证白酒和中国互联网指数。</p>
+<p>先说说中证白酒，在前面介绍行业指数的时候，我们也提到了，300消费正是凭借着合计占比达到46.96%的前两大权重股贵州茅台和五粮液，才在10个一级行业里傲视群雄。</p>
+<p>像主要消费、食品饮料等指数，主要权重股也都是白酒。主要消费包含食品饮料，食品饮料包含白酒，比如中证白酒的18个成份股有17个也在食品饮料指数里面，越细分，其风险性会越大，这是确定的，比如2013、2014年白酒行业因为塑化剂风波，波动起伏就会很大。</p>
+<p>但收益方面，却是反过来的。中证白酒以2008年12月31日为基日，1000点为基点。对比自2009年1月以来的收益发现，中证白酒&gt;食品饮料&gt;主要消费。</p>
+<blockquote>
+<p>自2009年1月以来，中证白酒指数年化收益率20.98%，跑赢沪深300 11.23%。</p>
+</blockquote>
+<p><img src="/images/2019-07-31-06-23-34.png" alt><br><code>图7：中证白酒、食品饮料、主要消费收益对比，雪球</code></p>
+<p>很多人对白酒行业的看法比较悲观，觉得现在年轻人普遍喝啤酒或其他低度白酒，白酒喝得少。这句话本身没有问题，这个趋势可能是存在的。但我们这里说的白酒主要是高端白酒，中证白酒前四大权重股分别是五粮液（15.96%）、泸州老窖（15.79%）、贵州茅台（14.66%）、洋河股价（13.77%），合计占比60.18%。简单谈几点我的看法：</p>
+<p>1）白酒是一个非常好的行业，原料不会稀缺，产能有限，有提价权，利润率足够高，而研发成本很低，产品和品牌的护城河很高，比如茅台只能在茅台镇的气候菌群条件加赤水河的水才可以酿造，泸州老窖的老窖池源自明朝，我们经常听说国窖1573，就是自1573年持续酿造至今，而新窖池需要几十年沉淀，才能酿出好酒，这是白酒行业的特殊性。这些特点，跟任何其他行业对比，都是绝对的优势。</p>
+<p>2）高端白酒的不是日常消费品，而是带有某种社交属性，我们常见的场合，包括商务场合、婚丧场合、会议场合、节日场合等等，这些场合下对高端白酒的需求量不会有太大的下降，另一方面个人消费者的购买力在增强，朋友聚会时来瓶好酒现在也比较常见，并且请记住白酒产能是有限的。即使是买个股，我也推荐研究一下白酒这个行业，像茅台的基酒产量，在财报里都会披露，这些基酒对应的是三四年后上市的产量，利润很好推算。</p>
+<p>3）中国高端白酒在出口方面存在市场增量。中国白酒位列世界八大烈酒之一，白酒是中国文化的一部分，随着中国经济发展，文化影响力的逐渐提升，中国白酒在国外越来越受欢迎。除了直接饮用，比如在日本就有商家用茅台来调制鸡尾酒等等。中国白酒出口数量及金额也是连续多年保持增长，见图8。茅台目前在国外的销售网络已经覆盖五大洲67个国家和地区，有115家海外经销商，海外市场的销售网络布局也日趋完善。据贵州茅台2018年的年报显示，2018年茅台海外营收28.93亿元，同比增长27.44%，占其总营收的3.9%，未来应该有进一步提升的空间。<br><img src="/images/2019-08-01-08-16-52.jpg" alt><br><code>图8：2010～2018 中国白酒出口数量及金额，海关总署</code></p>
+<p>再来看看中国互联网指数。</p>
+<p>我们都知道在过去的20年中，全球互联网的发展异常迅猛，尤其是近10年，随着苹果、安卓推出的智能手机，移动互联网真真切切地改变了每个人的工作、生活。</p>
+<p>中国的互联网企业，在10多年前，大多是Copy To China，即把国外比较成功的模式带回中国，比如门户、社交网络等等，在美国上市时，比如微博，会说是中国版的Twitter，这样投资者好理解。</p>
+<p>但是在移动互联网时期，中国开始反超，并局部领先，最典型的是移动支付。因为中国有人口数量最多的统一语言和货币体系，这是其他国家所不具备的。为什么Facebook最近要发行Libra？因为Facebook的全球用户数虽然远大于微信，但是美国用户给其他地区用户转账，就是国际汇款了，很不方便。</p>
+<p>现在，开始Copy From China了。最近两三年出国的朋友，已经不太适应国外用现金支付的情况，不像在国内，只要拿上手机就能出门了。不过支付宝和微信，在近几年，已经开始大力拓展海外市场，很多国家已经可以直接使用支付宝和微信支付了。</p>
+<p>互联网行业虽然发展很快，一片欣欣向荣的景象，但是从投资角度来看有三个问题。</p>
+<p>一是A股没有太多的互联网公司，大多数的互联网公司，从公司成立之初就是拿的美元融资，最后在境外上市，比如阿里、百度在美股，腾讯、美团在港股，如果要投资这些公司，换汇入金很麻烦，而且本身不合规，有人几年前转出去买股票的钱被银行要求转回境内。</p>
+<p>二是很多互联网公司都不盈利，习惯了<strong>市值=净利润xPE</strong>这套估值体系的人，面对PE高得离奇，但利润很少，甚至往往是负数的时候，真不知道该如何下手，像巴菲特就几乎不投资互联网公司。</p>
+<p>三是这个行业发展太快了，谁知道哪天自己会被别人颠覆？腾讯上市以来涨了400多倍，但是马化腾也拿不住自家股票，经常减持套现，你要说人家拿钱做其他用途，我信，但是不争的事实是，当年微博崛起，腾讯非常紧张，担心自己在社交上的优势会被削弱，幸好自己做出了微信。如果不是腾讯自己，而是别人做出了微信，这个后果会有多可怕？再说BAT里的百度，近年逐渐衰落，看起来是一连串偶然的问题和麻烦，实际原因并不是这样。百度真正的问题在于搜索已经不是未来趋势和主流。搜索是PC互联网的玩法，搜索引擎需要根据网页地址去爬关键字算权重，但是移动互联网时代，一个个独立的App，是无法被抓取检索的，我们越来越多地通过App去直接获取或搜索垂直类信息了，比如通过携程订机票，通过美团点外卖，通过头条看新闻，搜索引擎的衰落是必然的趋势。以前很多人会先打开百度，比如搜索京东，然后打开京东网页购物，专业术语叫寻址搜索，这占到搜索引擎很大一部分检索量，现在只需要找到京东App打开就行了。</p>
+<p>所以，在国内通过指数基金的形式，就可以投资于这样一个快速发展，但是又存在很多不确定性的行业，可能是最理想的方式。</p>
+<p>中证指数系列里，以BAT为主要权重的指数有“中国互联网50”和“中国互联网30”，以中国互联网50来说，它以2007年6月29日为基日，基点1000点。中国互联网50成份股中，阿里巴巴权重31.01%，腾讯控股权重30.81%，百度权重6.35%，其他的占比都更少，包括美团、京东、网易、携程、好未来、拼多多等。</p>
+<blockquote>
+<p>截至2019年7月31日收盘，中国互联网50是7875.44点，12年年化收益为18.77%，跑赢沪深300 9.02%。</p>
+</blockquote>
+<p>未来中国的互联网发展，还会有非常巨大的潜力和机会。</p>
+<p>一方面，在国内市场，各行各业正在被互联网改造，几年前说的互联网+有点一拥而上的架势，但是互联网人才不懂产业，产业人才不懂互联网，有点操之过急，如今产业互联网仍然被很多大佬看好。另一方面，中国独特的统一大市场、人力成本结构、城市居住特点等因素，成就了支付宝、微信支付、美团外卖、滴滴等企业，中国互联网开始在全球保持领先和扩张态势，人才储备、前沿技术、商业模式等形成对外输出。相信中国互联网从5G开始，存在一个领跑的机会，而且成功的可能很大。</p>
+<h2 id="策略指数"><a href="#策略指数" class="headerlink" title="策略指数"></a>策略指数</h2><p>我们说的指数，大多数是按（流通）市值进行加权，比如沪深300、中证500等等。策略指数，不改变成份股，但按照一定的规则重新计算成份个股的权重。常见的策略有基本面、成长、等权重、低波动（波动率）、红利（股息率）等等，你看到的指数名称大概是基本面50、300低波、消费红利这样的。</p>
+<p>按照市值加权，存在这么几个缺点：</p>
+<p>1）以沪深300为例，金融地产行业占到沪深300的39.07%，如果金融地产行业类股票的涨跌幅度较大，那么指数也会相应地出现较大的涨跌幅变动，这不能很好地反映市场整体的真实情况。</p>
+<p>2）假设某支个股的合理市值是100亿，占比1%，但是阶段性地被高估了，当前市值如果是200亿，那么占比将被提升到2%，越被高估，指数反而要被动地配置更多。同样的，低估的，需要被动减少配置。长期来看，指数的收益会被拉低，这不合理。</p>
+<p>这些策略的有效性如何呢？我们先看结论，下图是沪深300与300系列的一些策略指数的收益对比。</p>
+<p><img src="/images/2019-08-01-22-38-18.png" alt><br><code>图9：2005.1～2019.7，沪深300、300等权、300红利、300低波、300价值收益对比</code></p>
+<p>300低波成立时间为2019年3月7日，时间太短了，忽略掉。其他的，除300等权略微跑输沪深300，300价值和300红利都跑赢了沪深300。</p>
+<blockquote>
+<p>截至2019年7月31日，300红利年化收益12.81%，跑赢沪深300 3.07%。<br>截至2019年7月31日，300价值年化收益11.69%，跑赢沪深300 1.94%。</p>
+</blockquote>
+<p>这里重点介绍一下红利策略，在诸多策略里面，红利策略的管理规模目前是比较居前的，另外像价值、基本面及其他一些增强策略都包含了红利因子。</p>
+<p>在中证指数红利系列里，收益最高的是消费红利指数，最好的消费行业，叠加红利策略，自2005年12月30日基日，1000点为基点，至2019年7月31日，指数点位为29914.5，涨幅29.91倍，年化收益达到28.43%。这只是价格指数的收益，如果分红再投入，也就是全收益指数，那么红利策略本身股息率也比较高，这个年化收益应该超过了30%。</p>
+<p>红利策略，是美国一个叫迈克尔‧奥希金斯的基金，在他1991年出版的《跑赢道琼斯指数》一书里提出来的，当时叫狗股理论（Dogs of the Dow Theory）。</p>
+<p>他的原理是：每年年底在道指的成份股中选出10支股息率最高的股票，平均资金买入，一年后，重新找出10个股息率最高的，将不在名单中的卖出，买入新进名单的。如此循环。</p>
+<p>根据历史数据回测，过去几十年里，这个策略只有两年跑输市场，也就是1999年科技股泡沫，以及2008年金融危机。在1957～2003年期间策略年平均回报率为14.3%，跑赢道指的11%；在1973～1996年期间，策略平均年回报率高达20.3%，同样高于同期道指的15.8%。</p>
+<p>红利策略为何奏效？</p>
+<p>1）如果股息率高，则意味着公司敢于拿出真金白银来分红，说明公司现金流充裕、真实，这是一个不错的排雷指标。2019年7月，A股辅仁药业爆雷，原因是拿不出6000多万的分红款，而此前的一季报却显示公司货币资金余额有18亿，上交所问询后，回复说公司仅有现金1亿多，这才短短4个月，16亿现金去哪了……</p>
+<p>2）股息率=现金分红/市值，股息高往往意味着阶段性的市值这个分母变小了，这种情况，意味着被低估，买入后，一方面是赚了估值（市值）回归的钱。另一方面，股息足够高的话，假设已经超过了5%，即使是利润不再增长，那么股价继续下跌，意味着股息仍将继续提升，我们假设这种极端情况出现，那么你可以买光它的股票，凭着分红就是一笔非常不错的投资了。事实上红利策略正是股息越高权重越高的，这为指数提供了很好的安全垫，下面的支撑性往往比较强。</p>
+<p>3）指数基金净值=净利润*PE+分红，因为分红是动态变化的，所以我们前面在计算其他指数年化收益的时候，都没有加入分红因素，而真实买指数基金的情况下，如果分红也就是股息比较高，对于基金净值的提升，也就是最后的收益，还是起到比较大的作用，不要小看每年2%～3%的差距，长时间的复利之后，这个差距就会变得很大。</p>
+<p>红利策略，是一个在全球证券市场被证明有效的策略，在A股市场也有很多红利策略可以选择，比如上证红利、中证红利、深证红利等等。</p>
+<h2 id="其他市场指数"><a href="#其他市场指数" class="headerlink" title="其他市场指数"></a>其他市场指数</h2><p>在我们的语境里，说中国股市如何如何，往往说的是上证指数。上证指数成立时间最久，是以1990年12月19日为基日，基点是100点，所以我们习惯了以它作为中国股市的风向标。</p>
+<p>很多人一查上证指数，2007年就6000多点了，十几年过去了，现在才3000点上下，从而匆忙得出结论，中国股市垃圾，仿佛投资A股的全是傻瓜弱智。</p>
+<p>在这里还是要多说几句：</p>
+<p>1）上证指数无法代表全部A股，上证指数只包含了上交所的全部股票，深圳主板、中小板、创业板等，上证指数是不包含的，科创板现阶段也不包含，所以上证指数并不能代表A股整体表现。</p>
+<p>2）上证指数以总市值（沪深300以流通市值）加权平均作为权重分配依据，银行股、中石油、中石化对权重影响比较大，在一定程度上影响了上证指数的整体表现。</p>
+<p>3）新股上市第11个交易日，被纳入指数。A股市场特有的打新规则，任何一个新股，刚上市的那几天，都是连续涨停，然后大多数在开板之后开始漫长的阴跌，这个规则严重拖累了上证指数的指数点位。</p>
+<p>4）成份股分红除息，上证指数不予修正，任其自然回落，相当于每年自然跌掉2%左右……</p>
+<p>相对来说，比较能够全面地代表A股整体市场表现的，是万得全A指数。万得全A覆盖A股全部上市公司，从1999年12月30日1000点起步，到2019年7月31日，是3957.15点，年化收益率为7.28%。但是2000年左右，万得全A的PE-TTM高达60倍，而当前只有16.24倍，如果考虑估值因素，实际万得全A的年化收益率应该超过12%。</p>
+<p><img src="/images/2019-08-02-18-12-26.png" alt><br><code>图10：2010.1～2019.7，万得全A指数趋势</code></p>
+<p>这样看的话，A股收益很差吗？并没有。当然，这也告诉我们，要买得便宜，<strong>市值=净利润*PE</strong>，如果在60倍PE买入，现在PE降到16.24，光是靠净利润增长来消化这高估值，就得做好套好几年的准备。</p>
+<p>我们把眼光放到A股以外，挑选了美国、德国、日本、香港市场的指数，与跟沪深300做一个对比。在此，需要先申明一下，并不是我只挑选那些跑赢了沪深300的指数，而是我挑选了排名靠前经济体的指数，结果，巧合的是，无一例外，都跑赢了沪深300。</p>
+<p>对比选取的时间范围都是2009年3月6日，至2019年7月26日。沪深300当时的PE-TTM是15.45，当前12.12，估值更便宜一些，但差别不是太大。在此期间，沪深300的涨幅是68.75%。</p>
+<p>同一期间，标普500涨幅342.78%，德国DAX涨幅238.75%，日经225涨幅201.94%，香港恒生指数138.21%。最差的恒生指数，也高出沪深300一倍以上。</p>
+<p><img src="/images/2019-08-02-22-47-35.png" alt><br><code>图11：2009.3～2019.7，沪深300与标普500指数涨幅对比，Google财经</code></p>
+<p><img src="/images/2019-08-02-22-46-49.png" alt><br><code>图12：2009.3～2019.7，沪深300与德国DAX指数涨幅对比，Google财经</code></p>
+<p><img src="/images/2019-08-02-22-48-19.png" alt><br><code>图13：2009.3～2019.7，沪深300与日经225指数涨幅对比，Google财经</code></p>
+<p><img src="/images/2019-08-02-22-49-59.png" alt><br><code>图14：2009.3～2019.7，沪深300与香港恒生指数涨幅对比，Google财经</code></p>
+<p>通过整理这几个指数的前10大权重股及其权重，我们发现，这几个指数，还是有一些不同的特点，或许是未来A股的一些潜力行业。</p>
+<p><img src="/images/2019-08-03-00-32-10.png" alt><br><code>图15：沪深300、标普500、德国DAX、日经225、恒生指数前10大权重股</code></p>
+<p>在标普500指数中，信息技术无疑最为强势，微软、苹果、亚马逊、谷歌、FACEBOOK，占据了6席。中国最好的互联网公司之一，腾讯是恒生指数的第二大权重股。希望未来互联网公司能够以某种形式回流A股。</p>
+<p>德国DAX，有我们耳熟能详的一些世界性品牌和世界工业巨头，这符合德国给我们的印象，技术精湛，管理严谨等等。比如安联保险、样子、阿迪达斯、奔驰等，大众、宝马未能排进前10，但也在DAX指数中。另一个现象，是德国的化工企业，或者说新材料领域，有很强的优势，比如林德、巴斯夫、拜耳等等。A股的化工股印象中除了万华化学喊出要做中国的巴斯夫，其他的比较一般？</p>
+<p>日经225指数，排在第一的是优衣库母公司，软银、大金、全家便利店，这几个中国用户比较熟悉一些。发那科是全球最大的机器人公司，不过我没听说过……整体感觉电信和信息技术类的占比也不少，日本在消费电子、家电等领域技术上还是有独特的优势。</p>
+<p>恒生指数，前10大权重股中，金融保险占据7席，不愧是亚洲金融中心；另一个就是中国内地的企业很多，前10中同样占据7席。恒生指数有一个专门的“恒生中国企业指数”，或称H股指数或国企指数，注意不是我们一般理解上的“国企”。港股比较国际化，中国内地企业很多，繁体中文财报也比较容易读懂，对于国内用户来说，还是更容易理解和把握的一个市场。</p>
+<p>大致看完这些指数的权重股风格，看到其中很多我们非常熟悉的一些公司，对我们投资来说，还是很有吸引力。通过指数基金，我们不需要换汇，不需要海外开户，不需要读那些外文的财报，就可以直接交易，投资并持有这些国际一流的企业，真是一件幸运的事情。</p>
+<p>这难道不也是指数基金的魅力吗？</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>以上是我们根据指数的不同类型，分别来找到一些比沪深300有更高收益的指数。</p>
+<p>尽管指数本身特性已经分散了风险，但作为长期投资来说，还是要考虑到极端情况下可能的风险。任何时候，我们都不能过于重仓某一到两个指数，而是会从不同的指数里面挑选一些不同特点的指数，构建一个投资组合。</p>
+<p>获取高收益，降低不确定性风险，是我们最终的目标。</p>
+<p>从一个长期投资的角度来看，标的指数本身的的盈利能力即利润增长是第一位，长期是赚利润增长的钱。即使是买贵了，比如买时的PE是40倍，后来降到了20倍，下跌50%，但是利润增长达到年化20%，那么4年之后，也就解套了，即使以后长期保持在20倍PE，你仍能获得每年20%的利润增长的收益。</p>
+<p>一个是年化收益率10%的产品，另一个是年化收益率20%的产品，即使20%的产品买时贵了一倍，10年后的收益也会超过10%的产品。并且时间拉得越长，超额收益会越高。所以，这是指数级增长的关系，这是复利的威力。</p>
+<p><img src="/images/2019-08-03-10-16-44.png" alt><br><code>图16：年化10%和年化20%的投资品，分别在10、20、30、40年后的收益倍数</code></p>
+<p>其次才是买得便宜，赚估值修复和市场情绪的钱。当然买得便宜，也不代表不会更便宜，但买得便宜毕竟还是提供了安全垫，下跌的空间不会那么大了。另一方面，买得便宜，还是要有耐心，即使买得便宜也不代表一定会马上就估值回归，有时估值甚至在低位徘徊好几年，你会眼红其他涨得更好的机会，你会怀疑自己当时的判断和选择是不是出了问题，这将极为考验每个人的心智。买得便宜，对于中短期的投资，可能更加重要一些。</p>
+<p>资金体量不同，投资心态不同，个人性格和心理素质不同，每个人对于如何投资，如果构建投资组合，在何时买进何时卖出，观点会截然不同。</p>
+<p>对于我们以养老为目的的长周期投资来说，首要的是资产质量要好，比沪深300更好，好行业的指数，好主题的指数，好策略的指数；其次是买得便宜，最好能在极端低估的时候多买点，在极端高估的时候也可以卖一点。要有好的耐心，毕竟，只要时间足够久，你一定可以等到好的买卖机会，只要时间足够久，你一定会获取投资该有的回报。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="景云 wechat" style="width: 200px; max-width: 100%;">
+    <div>关注公众号“定投养老”，获取一个年化收益超16%的指数基金组合，每月实盘定投。</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/指数基金/" rel="tag"># 指数基金</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/08/长期投资指数基金的收益大概是什么水平？/" rel="next" title="长期投资指数基金的收益大概是什么水平？">
+                <i class="fa fa-chevron-left"></i> 长期投资指数基金的收益大概是什么水平？
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/10/挑选合适的指数基金，构建一个稳健高收益的投资组合/" rel="prev" title="干货！稳健高收益，一个适合长期定投的指数基金组合！">
+                干货！稳健高收益，一个适合长期定投的指数基金组合！ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">景云</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#宽基指数（规模指数）"><span class="nav-number">1.</span> <span class="nav-text">宽基指数（规模指数）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#行业指数"><span class="nav-number">2.</span> <span class="nav-text">行业指数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题指数"><span class="nav-number">3.</span> <span class="nav-text">主题指数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#策略指数"><span class="nav-number">4.</span> <span class="nav-text">策略指数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他市场指数"><span class="nav-number">5.</span> <span class="nav-text">其他市场指数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">景云</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="指数基金,定投,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="给股票，或者指数估值，是一个艰难的事情，即使有人能刚好猜中顶或底，那也只是巧合。 如果能够给股票以一个确定的估值，那就几乎没有专卖的存在了。因为一眼看过去就知道是便宜了还是贵了，这个差价就会被瞬间抹平。 有个段子是这么说的：买卖双方在市场相遇，确认过眼神，就知道彼此是对的人，然后一买一卖交易形成。买方和卖方都觉得自己更聪明，擦肩而过，互道一声傻X。 很形象，一笔交易之所以能达成，就是有人觉得贵了要">
+<meta name="keywords" content="指数基金,定投">
+<meta property="og:type" content="article">
+<meta property="og:title" content="指数基金怎么定投？什么时候买，什么时候卖？">
+<meta property="og:url" content="http://yoursite.com/2019/09/13/如何对指数基金估值，以及买卖点的确定/index.html">
+<meta property="og:site_name" content="定投养老">
+<meta property="og:description" content="给股票，或者指数估值，是一个艰难的事情，即使有人能刚好猜中顶或底，那也只是巧合。 如果能够给股票以一个确定的估值，那就几乎没有专卖的存在了。因为一眼看过去就知道是便宜了还是贵了，这个差价就会被瞬间抹平。 有个段子是这么说的：买卖双方在市场相遇，确认过眼神，就知道彼此是对的人，然后一买一卖交易形成。买方和卖方都觉得自己更聪明，擦肩而过，互道一声傻X。 很形象，一笔交易之所以能达成，就是有人觉得贵了要">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-12-12-09-52.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-09-10-38-11.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-12-13-03-56.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-12-15-54-07.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-08-12-17-23-16.png">
+<meta property="og:updated_time" content="2019-09-04T01:42:42.135Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="指数基金怎么定投？什么时候买，什么时候卖？">
+<meta name="twitter:description" content="给股票，或者指数估值，是一个艰难的事情，即使有人能刚好猜中顶或底，那也只是巧合。 如果能够给股票以一个确定的估值，那就几乎没有专卖的存在了。因为一眼看过去就知道是便宜了还是贵了，这个差价就会被瞬间抹平。 有个段子是这么说的：买卖双方在市场相遇，确认过眼神，就知道彼此是对的人，然后一买一卖交易形成。买方和卖方都觉得自己更聪明，擦肩而过，互道一声傻X。 很形象，一笔交易之所以能达成，就是有人觉得贵了要">
+<meta name="twitter:image" content="http://yoursite.com/images/2019-08-12-12-09-52.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/09/13/如何对指数基金估值，以及买卖点的确定/">
+
+
+
+
+
+  <title>指数基金怎么定投？什么时候买，什么时候卖？ | 定投养老</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">定投养老</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/13/如何对指数基金估值，以及买卖点的确定/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="景云">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="定投养老">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">指数基金怎么定投？什么时候买，什么时候卖？</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-13T00:00:00+08:00">
+                2019-09-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/定投/" itemprop="url" rel="index">
+                    <span itemprop="name">定投</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>给股票，或者指数估值，是一个艰难的事情，即使有人能刚好猜中顶或底，那也只是巧合。</p>
+<p>如果能够给股票以一个确定的估值，那就几乎没有专卖的存在了。因为一眼看过去就知道是便宜了还是贵了，这个差价就会被瞬间抹平。</p>
+<p>有个段子是这么说的：买卖双方在市场相遇，确认过眼神，就知道彼此是对的人，然后一买一卖交易形成。买方和卖方都觉得自己更聪明，擦肩而过，互道一声傻X。</p>
+<p>很形象，一笔交易之所以能达成，就是有人觉得贵了要卖出，有人觉得便宜了要买进，而交易双方都会认为自己是正确的，否则不会有这笔交易存在。在每个人心中，都有一套自己的估值逻辑，这才使得交易市场时刻充满了变数。</p>
+<p>相对而言，个股估值更难，因为业绩弹性大，估值不确定性因素多，更何况，有些公司，跌下去就再也回不来了，从此一蹶不振。指数的估值相对容易一些，毕竟是一揽子的公司，市场环境再糟糕，即使出现全行业大的业绩起伏，也会在一个区间内。这也是我们选择指数进行投资的重要原因。</p>
+<p>如果是一个100斤的瘦子，和一个200斤的胖子站在你面前，毫无疑问，你知道谁胖谁瘦，但要你精确地报出他们的体重，就有难度。因此，要精准地猜中顶底固然是困难的，所以我们才需要定投。</p>
+<p>我们都知道以前政治课本上讲过：价格围绕价值上下波动，这一点在证券市场体现得淋漓尽致。</p>
+<p>每支股票所对应的公司，市场时刻在给他不停地定价，但这些定价毫无疑问都会围绕他的价值波动，有时高了有时低了。</p>
+<p>巴菲特有个形象的比喻：股价就像是一条跟着主人散步的小狗，小狗有时候走在主人前面，有时候跑到主人的后面，但最后他们几乎是同时到达终点。</p>
+<p>所以，均值回归，即价格最终向价值靠拢几乎是必然的。</p>
+<p>市场只可能是一时的高估，也可能是一时的低估，但不可能永远高估或低估。</p>
+<p>在明显高估或低估的时刻，你大概还是能看出点什么不一样的规律的。</p>
+<p>因为我们在之前已经选出了要投资的指数基金，所以不再看全市场的情况，而仅就这几个指数本身来看高低，以及买卖点。</p>
+<p>先介绍方法。</p>
+<h2 id="价格均线"><a href="#价格均线" class="headerlink" title="价格均线"></a>价格均线</h2><p>价格均线，又称价格移动平均线，它是将每日（周、月、季、年等）收盘价加权平均，从而得到一条带有趋势性的轨迹。均线是最为常用的一个技术工具和指标，当价格跌破或上穿某些重要均线的时候，往往会影响市场参与者的心理因素。</p>
+<p>但价格均线是滞后的。使用价格均线，我们有两个原则，一是尽可能拉长看，二是不要用太小的均线，比如5日均线，它几乎是贴着价格走的，在太短的周期里，你往往看不到什么规律。</p>
+<p>我一般会使用20月均线和60月均线，以中证消费为例，大致是这样的：</p>
+<p><img src="/images/2019-08-12-12-09-52.png" alt><br><code>图1：中证消费价格指数20月、60月均线示意</code></p>
+<p>在这张图上，价格明显偏离且高于20月均线的，已用红圈标出，有3处；价格明显偏离且低于均线的，用绿圈标出，有2处。在黄色方框位置，价格不但低于20月均线，甚至低于60月均线。</p>
+<p>当前价格高于20月均线太多，意味着：</p>
+<p>1）价格脱离基本面太多了，所谓基本面，就是企业净利润的增速，市值=净利润*PE，如果净利润的增速只有20%，而增速超过了100%，则说明PE也就是估值被极度提高了，这时无疑积聚了市场风险。</p>
+<p>2）说明过去20个月里买入的人，盈利幅度过大，获利盘太多了，那些持有利润超过100%，甚至200%的人坐不住了，要砸盘套现走人了。</p>
+<p>3）市场的增量资金跟不上，没法维持现有的价格增速了。比如从1块钱，涨到2块钱，上涨100%，只需要市场有1块钱的资金就够了，而从2块涨到4块，同样上涨100%，即需要2块钱的增量资金。市场外注入的资金没法推动价格继续向上。</p>
+<p>所以价格偏离均线太多，还是比较容易看出高低点的。</p>
+<p>那么，根据均线偏离的规律，如何判断买卖点呢？在讲定投策略的时候，我们有提到过定投时两个微笑曲线的衔接问题，引用如下：</p>
+<blockquote>
+<p><img src="/images/2019-08-09-10-38-11.png" alt><br>两个微笑曲线衔接示意</p>
+</blockquote>
+<blockquote>
+<p>从A点出发，走到B点的时候，意味着回本了，如果你在这个时候停止了定投，那么从B点到C点这一段，你就完全错失掉了，因为下一个微笑曲线的低点是F，它与C点相等，理论上，至少B点到C点之间的这段距离，你仍然应该买入，否则，在B到C之间的这段价格，你以后再也买不到了。</p>
+</blockquote>
+<blockquote>
+<p>如果你是定期不定额的定投，在下一个微笑曲线周期，图中E点到F点，假设你在F点的时候会买2份及以上，那么理论上，C点到D点的这段距离，你仍然应该是买入的。</p>
+</blockquote>
+<blockquote>
+<p>换句话说，最佳的买入策略是，从A点开始买入，一直买到D点停止，在D到E的这段距离你停买甚至是开始卖出，然后从E点开始，进行下一轮微笑曲线的定投买入。</p>
+</blockquote>
+<p>再截取中证消费2014年1月至今的走势图来对比：<br><img src="/images/2019-08-12-13-03-56.png" alt><br><code>图2：2014.1~2019.8，中证消费指数走势</code></p>
+<p>假如我是从A点位置买入，在B点位置定投回本，在BC的区间内仍然应该买入，否则下次的低点是F，而BC间买入的成本低于F点买入。</p>
+<p>如果我是不定额买入，比如凡是价格低于20月均线，我双倍买入。则CD间仍然应该买入，因为这段距离的价格，在之后价格从E点往F点走的过程中，低于20月均线位置，即跟D点差不多的位置之后，我是双倍买入的，那在CD区间难道不值得1倍正常买入吗？</p>
+<p>而E点显然应该要卖出了，那么此时E点偏离了20月均线多少呢？E点最高价14090，对应的20月均线价格是9558，14090/9558=1.474</p>
+<p>我直接给出我的观察：</p>
+<ul>
+<li>当P（近30天最高价）/ 20月均线 &gt; 1.4  卖出，因为每次冲高都是一个尖顶，如果这个值大于1.4很多，比如达到1.8，可以单次多卖掉一点，最大卖出90%，保留10%底仓不卖。比如2008年1月达到1.82，2015年6月达到1.77。</li>
+<li>当1.2 &lt; P/ 20月均线 &lt; 1.4，不操作，既不卖出，也不买入。</li>
+<li>当1 &lt; P（当前股价）/ 20月均线 &lt; 1.2，1份买入。前面卖掉的仓位，在此时可以重新定投买入。</li>
+<li>当P &lt; 20月均线，2份买入。</li>
+<li>当P &lt; 20月均线，且P &lt; 60月均线时，3份买入。中证消费在2012年11月至2014年7月间符合这个标准。</li>
+</ul>
+<p>按照这个标准，在2019年3月中下旬至7月底之间应该不操作，而8月可能会回到1.2区间。</p>
+<h2 id="PE估值法"><a href="#PE估值法" class="headerlink" title="PE估值法"></a>PE估值法</h2><p>这个方法，在定投的人里面用得比较多，简单直接，就是看当前PE估值，以及跟历史估值点位进行对比，所处的分位点。</p>
+<p>但是也要注意，如果一个指数的历史过短，比如小于5年，甚至小于3年，这个办法不太适用。</p>
+<p><img src="/images/2019-08-12-15-54-07.png" alt><br><code>图3：2019.7～2019.8，中证消费PE-TTM分位点</code></p>
+<p>如上图的中证消费PE走势，在2009～2013年期间，是单边向下，从50多倍一直跌到近16倍，不断创新低，如果在这个期间来看分位点，PE的分位点应该是长期在10%以下的。</p>
+<p>如果只用分位点指标来看，像2015年6月也不能判断出顶部，因为那时的分位点还不到80%。</p>
+<p>用PE估值的方法，最好是记下这个指数一个较长时间内的高点和低点，尤其是被两次验证过的高点或低点，这样比较保险。比如中证消费在2013～2014期间的低点大概在17倍左右，2018年11月的低点是22倍，在2015年的峰值大概在41倍，再之前也到过53倍，10年中位值28倍。从这组数据来看，我建议制定一个PE交易的区间，例如：</p>
+<p>PE&gt;35倍，开始卖出，极端高估可以卖得再多一点，最多卖出90%；<br>30&lt;PE&lt;35，持有，不操作；<br>25&lt;PE&lt;30，买入1份；<br>20&lt;PE&lt;25，买入2份；<br>15&lt;PE&lt;20，买入3份；<br>PE&lt;15，买入4份；</p>
+<h2 id="RSI指标"><a href="#RSI指标" class="headerlink" title="RSI指标"></a>RSI指标</h2><p>RSI（Relative Strength Index），也称相对强弱指数，这个指标是测量一段时间内股价上涨总幅度占股价变化总幅度平均值的百分比，在0～100之间，它主要反应一段时间内的买卖供需关系。</p>
+<p>股票买卖在技术操作层面上，本质来说还是一种供需关系，如果一段时间内，买的人很多，很容易就会买过头，卖得很多，就会卖过头。</p>
+<p><img src="/images/2019-08-12-17-23-16.png" alt><br><code>图4：中证消费指数月线RSI</code></p>
+<p>RSI指标在使用的时候，一般看黄色的RSI6快速线，当RSI6在50上下时，表明市场基本处于均势，而突破90则表现超买严重，人人都看好，此时一般需要卖出；而RSI小于40时，则表示已经超卖，小于30时，超卖严重。</p>
+<p>但是，指标皆不是万能的，比如图中2016年6月时，RSI已经突破了90，但之后稍作调整，价格继续向上，再涨3倍，再次上升到90以上。</p>
+<p>指标是滞后的，不是指标决定价格，不能说因为指标已经超买了，就不可能再继续高，而是价格决定了指标，虽然当前指标已经显示高位，但是价格仍可以更高，从而带动指标的后续走势。</p>
+<p>一般来说：</p>
+<p>当RSI&gt;90，说明超买严重，可以考虑分批卖出仓位；<br>当70&lt;RSI&lt;90，可选择持有，不操作；<br>当40&lt;RSI&lt;70，可以选择1份买入；<br>当30&lt;RSI&lt;40，2份买入；<br>当RSI&lt;30，3份买入。</p>
+<p>之所以不完全按照50为分界线，是因为当价格上涨的时候，看好的人很多，往往这时也已经突破了前高，上方没有阻力，所以非常容易冲到高位。而在下跌过程中，很多人不愿意卖出，选择死扛，市场卖压相对较小，指标不太容易往下走得太快。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在这个部分，介绍了几个指标，用于判断买卖点位，但是请注意，这些指标也并非绝对，也不可能凭单一指标来决定买卖点，可以用多个指标结合使用。</p>
+<p>需要提醒的是，通过指标判断，立足于更长的周期来看，大概是相对有效的，但是在越短的周期内，指标越无效。没有人可以仅仅通过指标来进行交易，尤其是对于个股。</p>
+<p><strong>不是指标决定价格，而是价格决定指标。</strong></p>
+<p>价格都是市场走出来的，指标总是落后于价格。如果指标在某几次判断中有效，也并不能证明总是有效，上面我们也给出了一些反例。</p>
+<p>在真实的市场中，技术指标可以用于辅助判断，但更多的还是看经济基本面，看市场情绪，等等。</p>
+<p>再啰嗦一句，定投本身是放弃择时的，严格来说，就是无论市场处于什么位置，都在买入。如果不是到了极端的高位，或是极端的低位，我们完全可以放弃任何择时操作，这本身也没什么问题。</p>
+<p>如果根据指标来操作，那么也需要制定好计划并严格执行，切忌卖出之后，一看继续涨，就再次买入，这样就变成了短线的追涨杀跌，让情绪左右了你的交易，与其这样，还不如完全放弃择时。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="景云 wechat" style="width: 200px; max-width: 100%;">
+    <div>关注公众号“定投养老”，获取一个年化收益超16%的指数基金组合，每月实盘定投。</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/指数基金/" rel="tag"># 指数基金</a>
+          
+            <a href="/tags/定投/" rel="tag"># 定投</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/12/涨跌都舒服，越跌越兴奋的买入方法：定投/" rel="next" title="涨跌都舒服，越跌越兴奋的买入方法：定投">
+                <i class="fa fa-chevron-left"></i> 涨跌都舒服，越跌越兴奋的买入方法：定投
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/14/工资收入，决定生活品质的下限；投资收入，决定生活品质的上限。/" rel="prev" title="工资收入，决定生活品质的下限；投资收入，决定生活品质的上限。">
+                工资收入，决定生活品质的下限；投资收入，决定生活品质的上限。 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">景云</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#价格均线"><span class="nav-number">1.</span> <span class="nav-text">价格均线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PE估值法"><span class="nav-number">2.</span> <span class="nav-text">PE估值法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RSI指标"><span class="nav-number">3.</span> <span class="nav-text">RSI指标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">景云</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

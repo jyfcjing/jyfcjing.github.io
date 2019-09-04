@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="股票,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="如果你是一个已经开过证券账户的“股民”，或者在微博上关注过一些股票相关的账号，你就一定看到过一些广告，或者有时候接到过一些电话，告诉你可以跟着某位“老师”操作股票。 请千万不要相信。 为什么？道理很简单，如果这些“老师”真有如此神通广大，那自己随便加杠杆玩，可能不出几年，全市场的钱都让他给赚走了。为什么要把赚钱的机会给你？这种带单操作的，很可能是自己先提前埋伏了，让你去接货呢。你有可能赚了几次钱，">
+<meta name="keywords" content="股票">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何选股，请告诉我代码？">
+<meta property="og:url" content="http://yoursite.com/2019/09/06/如何选股，请告诉我代码？/index.html">
+<meta property="og:site_name" content="定投养老">
+<meta property="og:description" content="如果你是一个已经开过证券账户的“股民”，或者在微博上关注过一些股票相关的账号，你就一定看到过一些广告，或者有时候接到过一些电话，告诉你可以跟着某位“老师”操作股票。 请千万不要相信。 为什么？道理很简单，如果这些“老师”真有如此神通广大，那自己随便加杠杆玩，可能不出几年，全市场的钱都让他给赚走了。为什么要把赚钱的机会给你？这种带单操作的，很可能是自己先提前埋伏了，让你去接货呢。你有可能赚了几次钱，">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/A4FE7BC3-3B3F-471F-9E44-5729A0516341.jpeg">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-23-11-31-01.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-23-10-02-01.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-23-10-58-52.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-23-10-40-02.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-23-11-02-49.png">
+<meta property="og:image" content="http://yoursite.com/images/2019-07-23-11-08-00.png">
+<meta property="og:updated_time" content="2019-09-04T01:36:22.221Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何选股，请告诉我代码？">
+<meta name="twitter:description" content="如果你是一个已经开过证券账户的“股民”，或者在微博上关注过一些股票相关的账号，你就一定看到过一些广告，或者有时候接到过一些电话，告诉你可以跟着某位“老师”操作股票。 请千万不要相信。 为什么？道理很简单，如果这些“老师”真有如此神通广大，那自己随便加杠杆玩，可能不出几年，全市场的钱都让他给赚走了。为什么要把赚钱的机会给你？这种带单操作的，很可能是自己先提前埋伏了，让你去接货呢。你有可能赚了几次钱，">
+<meta name="twitter:image" content="http://yoursite.com/images/A4FE7BC3-3B3F-471F-9E44-5729A0516341.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/09/06/如何选股，请告诉我代码？/">
+
+
+
+
+
+  <title>如何选股，请告诉我代码？ | 定投养老</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">定投养老</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/06/如何选股，请告诉我代码？/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="景云">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="定投养老">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">如何选股，请告诉我代码？</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-06T00:00:00+08:00">
+                2019-09-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/股票/" itemprop="url" rel="index">
+                    <span itemprop="name">股票</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>如果你是一个已经开过证券账户的“股民”，或者在微博上关注过一些股票相关的账号，你就一定看到过一些广告，或者有时候接到过一些电话，告诉你可以跟着某位“老师”操作股票。</p>
+<p>请千万不要相信。</p>
+<p>为什么？道理很简单，如果这些“老师”真有如此神通广大，那自己随便加杠杆玩，可能不出几年，全市场的钱都让他给赚走了。为什么要把赚钱的机会给你？这种带单操作的，很可能是自己先提前埋伏了，让你去接货呢。你有可能赚了几次钱，但最后几乎可以肯定是会赔钱的。</p>
+<p>在生活中，你有一些做股票投资的朋友，你跟他们交流的时候，他们可能会跟你说一些股票代码，但大多数情况下，他们可能什么也不会说。</p>
+<p>为什么？道理很简单，我如果告诉你买某只股票，你买了，只会是两种结果：一种是你赚钱了，但你不会给我分一分钱；另一种是赔钱了，如果赔得多，估计连朋友都没得做了。吃力不讨好的事情，谁会做呢？如果不是特别信得过的朋友，估计不会。</p>
+<p>没有人可以猜出未来10年哪些股票涨得好，更没有人可以预测短期涨跌，如果有人说他可以，不用怀疑，一定是骗子。</p>
+<p>知乎上有一个问题：如果穿越回1990年身上有10万存款，你会怎么投资这笔钱？有兴趣可以搜来看看 <a href="https://www.zhihu.com/question/295539521/answer/507135138，有个答案主要是讲的投资股市。" target="_blank" rel="noopener">https://www.zhihu.com/question/295539521/answer/507135138，有个答案主要是讲的投资股市。</a></p>
+<p>他写道：“92年国内证券市场开放时炒作股票。预计6个月时间，预期收益1500~2000万元（避免收益过多，涉及操纵证券市场罪。）”莫名地有一种喜感，赚钱太多以至于怕触犯法律。后面还有操作2000年美国互联网概念股等等，“预期2000年左右，登顶世界首富。”“由于资产膨胀太快，导致比特币出现的时候，你已经看不上了。”最后的最后，他说“计划已经编制好了，现在就差一个时光机了。所以：谁现在提供一台时光机，分你5万亿美元，就这么愉快的决定了。”</p>
+<p>除非，真的可以用后视镜来看，否则，你凭什么用大家都知道的指标，诸如“金叉买入，死叉卖出”之类的赚别人赚不到的钱呢？</p>
+<p>抛开股市，如果我问你，什么样的生意是好生意？不同的人可能有不同的答案，但所有的说法最后会归于一点：能赚钱的就是好生意，当然，别忘了加一个期限，那就是，好吧，一万年太久了不现实，十年，二十年，或许是可以期待的。</p>
+<p>如果你认同这一点，那么恭喜你，你的认知已经达到了股神的层次了。</p>
+<p>巴菲特说：</p>
+<blockquote>
+<p>​​如果非要我用一个指标进行选股，我会选择ROE（净资产收益率），那些ROE能常年持续稳定在20%以上的公司都是好公司，投资者应当考虑买入。</p>
+</blockquote>
+<p>巴菲特的搭档芒格先生也说过类似的话，他说：</p>
+<blockquote>
+<p>从长期来说，一只股票的回报率跟企业发展是环环相扣的，如果一家企业40年来的盈利一直是它资本的6%（ROE），那在长期持有40年后，你的年均收益率不会和6%有什么区别——即便你当初买的时候检的便宜货。如果该企业在20-30年间盈利都是资本的18%（ROE），即便你当初出价过高，回报依然会令你满意！</p>
+</blockquote>
+<p>ROE的全称是Return On Equity，中文名为净资产收益率，它是一个主要用来评估公司盈利能力的指标。其计算公式为：</p>
+<blockquote>
+<p> 净资产收益率=净利润/净资产*100%</p>
+</blockquote>
+<p>这个指标，衡量的是公司净资产的盈利效率。如果一个公司，年初时有净资产（企业的资产总额减负债）10亿，当年净利润2亿，那么ROE就是20%。</p>
+<p>我们知道，很多行业有比较明显的行业周期性，在股票市场，这些股票称为周期股，比如券商就是这样的行业，牛市交易量放大，券商收手续费，自然是大赚，而熊市交易冷清，行业里甚至出现了很多亏损的公司。这样的行业，ROE就会出现周期性波动。</p>
+<p>如果一个公司，能够连续多年保持较高的ROE水平，那么，它就是一个好公司。通过某软件，我们设定一个选股条件，“连续10年，ROE大于20%”，看看出来的结果（注意不同的软件出来的结果不同）：</p>
+<p><img src="/images/A4FE7BC3-3B3F-471F-9E44-5729A0516341.jpeg" alt><br><code>图1：连续10年，ROE大于20%，某股票软件</code></p>
+<p>不多不少，正好10个。可能比你想得要少。找出这10家公司过去10年的ROE数据，并结合股价涨幅计算年化收益，结果见下表：</p>
+<p><img src="/images/2019-07-23-11-31-01.png" alt><br><code>图2：ROE测算图，自制</code></p>
+<p>我们先解释几个问题：<br>1）有4家公司的上市时间晚于2009年1月，但被公式选中，可能的原因是在IPO招股书上披露了之前的数据，在计算时已按实际上市时长计算。<br>2）10年是一个不长不短的周期，从上证指数来看，2009年1月和2018年12月大抵都在熊市底部位置，但不同公司在不同时期的估值水平并不完全一致，会有一些计算上的出入。<br>3）只统计了A股公司，像腾讯也符合，但在港股上市，没有计算在内。<br>4）所有数据都只代表过去，仅供参考。但有一些指标和经验，如果连回测都通过不了，那就更没有参考意义了。</p>
+<p>再来看一些规律：<br>1）以上10家公司，有9家来自消费和医药行业，其中茅台、洋河主业为白酒，伊利、露露为饮料，海天为调味品，均为食品，格力电器属于大消费行业；华东医药、恒瑞医药、信立泰为医药企业；只有海康威视属于电子制造业。<br>2）因为格力电器和伊利股份过去的分红比例比较高，导致前复权之后2009年1月价格为负值，如果分红再投入，其实际的收益将比表中的数据要高。如果你投资的公司，其年化收益能超过20%，但大比例分红把钱给了你，你有多少把握找到比这个收益更高的投资机会呢？所以并不是分红越多越好，比如巴菲特的伯克希尔坚持不分红……当然，你可以选择分红之后再投入。<br>3）因为不同公司起止估值水平不一致，其ROE平均值跟年化收益率并不完全相等。但10家公司的ROE10年平均之后，再平均是30.29%，与年化收益再平均的30.67%非常接近。</p>
+<p>价值投资者们，经常说在投资股票要找“三好学生”：<strong>好行业，好公司，好价格</strong>。</p>
+<p>什么是好行业？为什么我们刚才的统计结果里，消费和医药股扎堆？请注意我们的选股条件，不光要ROE高，还要求连续10年，这就把一些周期性行业的公司给排除掉了。消费医药，都是入口的东西，经济有周期性波动，但是经济环境再糟糕，你也得吃吃喝喝，生病了需要吃药。我们经常调侃说，A股是喝酒吃药行情，这是有道理的。</p>
+<p>尤其是消费行业，每一家公司的产品，都广为人知，全国14亿消费者，高频复购（茅台估计只有小部分人能连续消费），品牌有着较为宽广的护城河。原料、产销都在国内，也不受国际贸易环境影响。</p>
+<p>医药行业具有一定的专业性，不管是从消费的角度，还是投资的角度，普通人想搞清楚这个行业，从这个行业的股票上赚钱，门槛有点高。但是，如果从更长的时间周期来看，像我们开篇所讲的，30年后，80后都年过60，每3个中国人里面就有1个60岁以上老人的时候，无疑，中国的医药行业，还有广阔的发展空间。</p>
+<p>这就是好行业。俗话说男怕入错行，买股票恐怕也是这样。很多精明的长期投资者，都会重仓这些优秀的行业，像巴菲特就持有可口可乐、苹果公司（近两年才进入，巴菲特认为苹果现在更像是消费股，而不是科技股）。</p>
+<p>至于好公司，除了刚才我们提到的10个以外，自然还有很多，比如金融行业的招商银行，地产行业的万科，化工行业的万华化学，汽车制造行业的福耀玻璃，互联网行业的阿里、腾讯，等等。</p>
+<p>这些公司，所在的行业，具有一定的周期属性，但看过去10年的涨幅，也都不小。当然，另一方面也跟特定的中国经济发展阶段有关，比如过去二十年，买房买车，几乎人人都用手机上网，那么相关产业链都是受益者。</p>
+<p>从我们的日常生活出发，挑选那些必不可少的，或者符合未来趋势的好行业里面的龙头公司，长期持有，想必收益不会太差。</p>
+<p>最后说说好价格。</p>
+<p>通俗地说就是要买得便宜。当然，便宜是个相对的概念，如果要说便宜或贵，那自然就需要有一个估值和定价，知道它值多少钱，而这恰恰是很难的。</p>
+<p>如果所有的股票也能精确地估值和定价，那就不会有交易和波动了，因为便宜不便宜，一目了然。就像超市里卖的鸡蛋，平时卖10块1斤，今天只要5块，那大家自然是蜂拥而上了。事实上，很多“便宜”的股票是5折之后还可以再5折的。比如这些：<br><img src="/images/2019-07-23-10-02-01.png" alt><br><code>图3：2019年跌幅最大的10支个股，某股票软件</code></p>
+<p>2019年到7月以来，整个市场是上涨的，沪深300上涨了25%左右，但仍然有很多个股腰斩之后再腰斩。</p>
+<p>一个有意思的现象是，很多人一听茅台要900多一股，就觉得特别贵，所以他们选择买入那些几块钱的股票，因为可以买得更多。但茅台2019年以来涨了65%，而上图中那10支股票有9支小于10块钱，最少也跌了62%。如果仅看价格判断股票贵不贵，那还没有入门呢。</p>
+<p>在股市里待久了，就会发现，好公司，一般都不便宜。但是，另一个矛盾的事实是，好公司一般股价越涨越便宜。为什么？如果公司的净利润涨幅大于股价涨幅，那么PE就会下降，我们说过，市值=净利润*PE。请看下图：</p>
+<p><img src="/images/2019-07-23-10-58-52.png" alt><br><code>图4：茅台PE-TTM与股价走势图，某平台</code></p>
+<p>近3年来，茅台估值最贵的时候是2018年初，当时的滚动市盈率（市值/过去连续4个季度的净利润）为40.86，股价大约是760元上下，而当前的滚动市盈率为31.71，估值更便宜，但股价却比那时高，已经是950元上下了。</p>
+<p>那现在的茅台，究竟贵不贵呢？当前，A股全市场的PE中值，大约为26.81，茅台30.52，那茅台在全市场的排位，是属于偏贵的。</p>
+<p>但是，茅台并不是普通的股票，茅台过去10年连续ROE均大于20%，平均33.93%，股价年化收益率37.34%，在2007～2018的11年中，扣非净利润年年增长，由28.33亿增长到355.85亿，增长12.56倍，净利润年化涨幅25.86%。</p>
+<p><img src="/images/2019-07-23-10-40-02.png" alt><br><code>图5：茅台2007～2018年扣非净利润，某股票软件</code></p>
+<p>刚刚出炉的茅台2019上半年报，实现净利润199.51亿元，同比增长26.56%，1天赚1亿多，销售毛利率91.25%，成本不足百元，给经销商的价格是969元，某自营电商平台53度的飞天茅台大约在2500～2700元，还动不动就缺货。</p>
+<p>你说茅台贵不贵，你觉得茅台给多少PE合适，多少市值合理？</p>
+<p><img src="/images/2019-07-23-11-02-49.png" alt><br><code>图6：茅台自2002年以来的PE-TTM与股价走势图，某平台</code></p>
+<p><img src="/images/2019-07-23-11-08-00.png" alt><br><code>图7：茅台市盈率统计，自制</code></p>
+<p>茅台的例子，我们看到前文所说的赚三种钱的完美体现。<br>1）主要是赚利润增长的钱。参见图2，在2009年1月至2018年12月的23.88倍增长中，有9.26倍来自利润增长。<br>2）赚估值修复的钱。极端的低估8.83倍PE出现在2013、2014年，当时是白酒行业的塑化剂风波叠加反三公消费，再加上A股整体熊市，但往往在这种时候，问题接着一个问题，况且在2013、2014、2015年这三年，其净利润确实是几乎没增长，很多人在观望，没多少人敢出手买入。这是最便宜的时候。<br>3）赚市场情绪的钱。除开行业性的事件风波，大多数时候PE在20至40倍之间波动，2004～2005，2008，2018年都是一般意义上的熊市，2014年也是熊市，但叠加了事件影响。这是次便宜的时候。</p>
+<p>事后来看，你若想在茅台上面赚钱，其实任何时候买入都是对的。若以茅台上市以来的所有时间点来看：</p>
+<p>1）最佳的买入时间是2007年之间，因为买得早，在多年的高速增长之后，利润最大，这是赚利润增长的钱。但你若是在2007年PE过百的时候买入，抱歉，你差不多要在4年半之后才能解套。<br>2）2007年之后的最佳买入点是2014年，那是行业遭遇了危机，赚估值修复的钱。但这个钱不好赚。<br>3）然后是历次的熊市底部，尤其是熊市尾部，当前A股机构投资者持有市值占比大约是13%，很多基金经理抱着蓝筹白马轻易不卖，但熊市一直有人赎回基金，别的卖的差不多了，最后还得卖这些“非卖品”，这就是熊尾的蓝筹白马补跌。</p>
+<p>以上，在茅台这个例子上，恐怕只有2006年11月至2007年11月期间不适合买入茅台，这也是茅台PE突破40倍，向100倍进发的时候。</p>
+<p>当然历史数据只能用于回测，我们没有办法保证未来10年，未来20年，买入这些股票仍能取得这样的涨幅。</p>
+<p>但如果，我是说如果我们真的要买个股，请你做好功课，知道个股的护城河在哪里，利润增长有没有可持续性，未来大概能保持怎样的利润增速？这是知道我们买的是什么东西，我们为什么长期能赚钱。</p>
+<p>其次，这些个股的历史估值要能记下来，任何时候，看到其当下估值，都要知道，现在是否便宜值得逐渐买入，或者高估了，要分批卖出。若是当前，以31倍左右的市盈率买入茅台，而我们仍未走出熊市，往下，大概极端也就是跌到20倍，若长期保持20倍，靠利润增速，你大概会被套多久？若是再碰到什么行业性事件，利润和估值出现双杀，你又会被套多久？这是不是你能承受的。这是知道估值贵贱，知道什么时候出手买卖。</p>
+<p>如果能做到这些，你就能在买入个股的时候做到胸有成竹，淡定自若了。跌了，有什么关系？只要利润增速能保持住，跌下来估值更便宜，买买买就对了。</p>
+<p>但是，个股终究充满了不确定性和风险，若长期看，真正做到百年老店，基业常青的，有几个呢？</p>
+<p>阿里今天如日中天，他想做102年企业的愿望能实现吗？马云也不知道……</p>
+<p>预告一下，明天我们聊聊，为什么买指数基金，而不是股票。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="景云 wechat" style="width: 200px; max-width: 100%;">
+    <div>关注公众号“定投养老”，获取一个年化收益超16%的指数基金组合，每月实盘定投。</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/股票/" rel="tag"># 股票</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/05/为什么股票投资的长期回报最高？买股票、基金究竟在赚什么钱？/" rel="next" title="为什么投资股票的长期回报最高？买股票、基金究竟在赚什么钱？">
+                <i class="fa fa-chevron-left"></i> 为什么投资股票的长期回报最高？买股票、基金究竟在赚什么钱？
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/07/可能是普通人慢慢变富的唯一正确方法：指数基金/" rel="prev" title="可能是普通人慢慢变富的唯一正确方式：指数基金">
+                可能是普通人慢慢变富的唯一正确方式：指数基金 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">景云</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">景云</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
